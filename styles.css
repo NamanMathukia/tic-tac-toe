@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #548687;
+  text-align: center;
+}
+
+h1 {
+  background-color: palevioletred;
+  height: 50px;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffc7;
+}
+
+/* Buttons */
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+/* Winner Scoreboard */
+.winner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 120px;
+}
+
+.score span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.score p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* X Styling */
+.x-score {
+  border: 3px solid #ff4d4d;
+}
+
+.x-score span {
+  color: #ff4d4d;
+}
+
+/* O Styling */
+.o-score {
+  border: 3px solid #4da6ff;
+}
+
+.o-score span {
+  color: #4da6ff;
+}
+
+/* Winning highlight */
+.win {
+  background-color: #90ee90 !important;
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
